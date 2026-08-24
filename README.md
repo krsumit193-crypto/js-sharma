@@ -1,2 +1,3 @@
 # js-sharma
-code repo for javascript
+Code Repo for javascript
+Author- Sharma
