@@ -4,6 +4,8 @@
 
 ### Topic-wise JavaScript, one runnable lesson at a time.
 
+**Author:** Sharma
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Beginner Friendly](https://img.shields.io/badge/Level-Beginner%20%E2%86%92%20Intermediate-brightgreen?style=for-the-badge)
