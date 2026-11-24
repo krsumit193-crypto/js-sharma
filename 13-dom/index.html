@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>13 · DOM Basics — js-sharma</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    h1 { color: #f7df1e; text-shadow: 0 1px 2px #0005; }
+    .card { border: 1px solid #8885; border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0; }
+    .highlight { background: #f7df1e33; padding: 0.1rem 0.4rem; border-radius: 4px; }
+    button { cursor: pointer; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #8888; }
+    button:hover { background: #f7df1e55; }
+    input { padding: 0.5rem; border-radius: 8px; border: 1px solid #8888; }
+    .done { text-decoration: line-through; opacity: 0.6; }
+    li { margin: 0.35rem 0; }
+    code { background: #8882; padding: 0.1rem 0.3rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>🌐 13 · DOM Basics</h1>
+  <p>
+    This page is the playground for <code>dom-basics.js</code>.
+    Open your browser console (<kbd>F12</kbd>) to see the logged output,
+    then try the buttons below.
+  </p>
+
+  <div class="card" id="welcome-card">
+    <h2 id="heading">Hello from HTML 👋</h2>
+    <p class="note">The JavaScript in this lesson will change this text.</p>
+    <button id="change-text">Change heading</button>
+    <button id="add-highlight">Highlight heading</button>
+  </div>
+
+  <div class="card">
+    <h2>Todo list (createElement + events)</h2>
+    <form id="todo-form">
+      <input id="todo-input" placeholder="Add a task…" autocomplete="off" />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list">
+      <li>Learn the DOM</li>
+      <li>Build something small</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Text vs HTML (XSS safety)</h2>
+    <p id="output-area">Type something below and submit.</p>
+    <form id="unsafe-form">
+      <input id="unsafe-input" placeholder="Try: <b>hello</b>" />
+      <button type="submit">Render it</button>
+    </form>
+  </div>
+
+  <!-- defer = run after the HTML is parsed, so the elements exist -->
+  <script src="dom-basics.js" defer></script>
+</body>
+</html>
